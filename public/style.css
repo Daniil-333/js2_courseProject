@@ -652,18 +652,14 @@ summary:focus {
 .main-content .fetured {
   margin-bottom: 110px;
 }
-.main-content .fetured .container {
-  display: flex;
-  flex-direction: column;
-}
-.main-content .fetured .container .fetured__h2 {
+.main-content .fetured__h2 {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.025em;
   color: #222222;
   text-align: center;
 }
-.main-content .fetured .container .fetured__subtitle {
+.main-content .fetured__subtitle {
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
@@ -672,38 +668,38 @@ summary:focus {
   margin-bottom: 59px;
   text-align: center;
 }
-.main-content .fetured .container .product-box {
+.main-content .fetured .product-box {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.main-content .fetured .container .product-box .product {
+.main-content .fetured .product-box .product {
   position: relative;
   margin-bottom: 39px;
   padding-bottom: 24px;
   box-sizing: border-box;
 }
-.main-content .fetured .container .product-box .product:hover {
+.main-content .fetured .product-box .product:hover {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.15);
 }
-.main-content .fetured .container .product-box .product:hover .product__img {
+.main-content .fetured .product-box .product:hover .product__img {
   filter: brightness(0.3);
 }
-.main-content .fetured .container .product-box .product:hover .product__add {
+.main-content .fetured .product-box .product:hover .product__add {
   display: flex;
 }
-.main-content .fetured .container .product-box .product:hover .product__stars {
+.main-content .fetured .product-box .product:hover .product__stars {
   display: inline-block;
 }
-.main-content .fetured .container .product-box .product .product__link {
+.main-content .fetured .product-box .product .product__link {
   display: block;
   height: 280px;
   overflow: hidden;
 }
-.main-content .fetured .container .product-box .product .product__img {
+.main-content .fetured .product-box .product .product__img {
   width: 100%;
 }
-.main-content .fetured .container .product-box .product .product__name {
+.main-content .fetured .product-box .product .product__name {
   font-size: 13px;
   line-height: 1.2;
   font-weight: 600;
@@ -711,7 +707,7 @@ summary:focus {
   color: #222222;
   margin: 19px 15px;
 }
-.main-content .fetured .container .product-box .product .product__price {
+.main-content .fetured .product-box .product .product__price {
   display: block;
   font-size: 16px;
   line-height: 1.2;
@@ -721,7 +717,7 @@ summary:focus {
   margin-left: 15px;
   height: 20px;
 }
-.main-content .fetured .container .product-box .product .product__stars {
+.main-content .fetured .product-box .product .product__stars {
   display: none;
   font-size: 15px;
   line-height: 1.2;
@@ -729,10 +725,10 @@ summary:focus {
   text-transform: uppercase;
   color: #e4af48;
 }
-.main-content .fetured .container .product-box .product .product__stars:nth-of-type(1) {
+.main-content .fetured .product-box .product .product__stars:nth-of-type(1) {
   margin-left: 100px;
 }
-.main-content .fetured .container .product-box .product .product__add {
+.main-content .fetured .product-box .product .product__add {
   position: absolute;
   top: 97px;
   left: 70px;
@@ -750,18 +746,20 @@ summary:focus {
   justify-content: center;
   align-items: center;
 }
-.main-content .fetured .container .product-box .product .product__add .product__basket {
+.main-content .fetured .product-box .product .product__add .product__basket {
   margin-right: 8px;
 }
-.main-content .fetured .container .product-box .product .product__add:hover {
+.main-content .fetured .product-box .product .product__add:hover {
   box-shadow: 0 0 5px #ffffff;
 }
-.main-content .fetured .container .product-box .product .product__add:active {
+.main-content .fetured .product-box .product .product__add:active {
   outline: none;
 }
-.main-content .fetured .container .fetured__browse {
+.main-content .fetured__browse {
+  text-align: center;
+}
+.main-content .fetured__link {
   display: inline-block;
-  margin: 0 auto;
   width: 212px;
   height: 48px;
   background-color: #f16d7f;
@@ -772,7 +770,7 @@ summary:focus {
   color: #ffffff;
   text-align: center;
 }
-.main-content .fetured .container .fetured__browse::after {
+.main-content .fetured__link::after {
   content: "\f178";
   font-family: FontAwesome;
   font-size: 15px;
@@ -782,15 +780,15 @@ summary:focus {
   color: #ffffff;
   padding-left: 9px;
 }
-.main-content .fetured .container .fetured__browse:hover {
+.main-content .fetured__link:hover {
   outline: 1px solid #222222;
 }
-.main-content .fetured .container .fetured__browse:active {
+.main-content .fetured__link:active {
   opacity: 0.7;
 }
 .sale {
   margin-bottom: 95px;
-  background: url("img/offer-women-fon.jpg") no-repeat #222222;
+  background: url("img/sale-fon.jpg") no-repeat #222222;
   height: 529px;
   box-sizing: border-box;
   display: flex;
@@ -812,9 +810,6 @@ summary:focus {
 }
 .sale__h3-box .sale__subtitle {
   font-size: 32.2px;
-}
-.sale-side-general {
-  display: none;
 }
 .subscribe {
   background: url("img/subsc-fon.jpg") no-repeat, rgba(242, 242, 242, 0.5);
@@ -1651,6 +1646,7 @@ summary:focus {
   color: #4a4a4a;
   padding: 15px 0;
   cursor: pointer;
+  text-align: center;
 }
 .shop-cart .container .shop-cart__buttons .shop-cart__button:hover {
   border: 1px solid #000;
@@ -1952,11 +1948,8 @@ summary:focus {
   .main-page-content .fetured-items .container .fetured-items-block {
     justify-content: space-around;
   }
-  .main-page-content .offer-women {
+  .sale {
     display: none;
-  }
-  .main-page-content .banner-side-general {
-    display: block;
   }
   .footer .container .footer__content .footer__logo {
     display: none;
@@ -2129,4 +2122,3 @@ summary:focus {
     font-size: 10px;
   }
 }
-/*# sourceMappingURL=style.css.map */

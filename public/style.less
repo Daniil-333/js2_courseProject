@@ -777,11 +777,7 @@ summary {
   .fetured {
     margin-bottom: 110px;
 
-    .container {
-      display: flex;
-      flex-direction: column;
-
-      .fetured__h2 {
+    &__h2 {
         font-size: 30px;
         font-weight: 700;
         letter-spacing: 0.025em;
@@ -789,7 +785,7 @@ summary {
         text-align: center;
       }
 
-      .fetured__subtitle {
+    &__subtitle {
         font-size: 14px;
         font-weight: 400;
         line-height: 30px;
@@ -799,13 +795,15 @@ summary {
         text-align: center;
       }
 
-      .product-box {
-        .product-box;
-      }
+    .product-box {
+      .product-box;
+    }
 
-      .fetured__browse {
+    &__browse {
+        text-align: center;
+      }
+    &__link {
         display: inline-block;
-        margin: 0 auto;
         width: 212px;
         height: 48px;
         background-color: @siteColor;
@@ -835,13 +833,12 @@ summary {
           opacity: 0.7;
         }
       }
-    }
   }
 }
 
 .sale {
   margin-bottom: 95px;
-  background: url("img/offer-women-fon.jpg") no-repeat @textColor;
+  background: url("img/sale-fon.jpg") no-repeat @textColor;
   height: 529px;
   box-sizing: border-box;
   display: flex;
@@ -866,10 +863,6 @@ summary {
       font-size: 32.2px;
     }
   }
-}
-
-.sale-side-general {
-  display: none;
 }
 
 .subscribe {
@@ -1851,6 +1844,7 @@ summary {
         color: #4a4a4a;
         padding: 15px 0;
         cursor: pointer;
+        text-align: center;
 
         &:hover {
           border: 1px solid #000;
@@ -2217,14 +2211,10 @@ summary {
         }
       }
     }
+  }
 
-    .offer-women {
-      display: none;
-    }
-
-    .banner-side-general {
-      display: block;
-    }
+  .sale {
+    display: none;
   }
 
   .footer {

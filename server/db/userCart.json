@@ -4,26 +4,22 @@
     "contents": [
         {
             "quantity": 1,
-            "id_product": 3,
-            "product_name": "MANGO PEOPLE T-SHIRT",
+            "id_product": 17,
+            "product_name": "AGNES TOP",
             "price": 52,
-            "img": "img/fetured-item3.jpg",
+            "img": "img/add_items3.jpg",
+            "color": "Red",
+            "size": "XII",
             "subPrice": 52
         },
         {
-            "quantity": 1,
-            "id_product": 8,
-            "product_name": "MANGO PEOPLE T-SHIRT",
+            "quantity": 3,
+            "id_product": 15,
+            "product_name": "BLAZE LEGGINGS",
             "price": 52,
-            "img": "img/fetured-item8.jpg",
-            "subPrice": 52
-        },
-        {
-            "quantity": 1,
-            "id_product": 5,
-            "product_name": "MANGO PEOPLE T-SHIRT",
-            "price": 52,
-            "img": "img/fetured-item5.jpg",
+            "img": "img/add_items1.jpg",
+            "color": "Red",
+            "size": "XII",
             "subPrice": 52
         }
     ]
