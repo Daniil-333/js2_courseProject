@@ -1,13 +1,13 @@
 import {ProductItem} from "./ProductItem.js";
 
 export const Products = {
-    inject: ['API', 'getJson'],
+    props: [],
+    inject: ['getJson'],
     components: {
         ProductItem
     },
     data() {
         return {
-            // catalogUrl: '/catalogData.json',
             products: [],
         }
     },
@@ -19,9 +19,7 @@ export const Products = {
     mounted() {
         this.getJson(`/api/products`)
             .then(data => {
-                for (let el of data) {
-                    this.products.push(el);
-                }
+                this.products = data;
             });
     },
     template: `

@@ -2,49 +2,63 @@
         "id_product": 1,
         "product_name": "MANGO PEOPLE T-SHIRT",
         "price": 52,
-        "img": "img/fetured-item1.jpg"
+        "img": "img/fetured-item1.jpg",
+        "color": "red",
+        "size": "XII"
     },
 
     {
         "id_product": 2,
         "product_name": "MANGO PEOPLE T-SHIRT",
         "price": 52,
-        "img": "img/fetured-item2.jpg"
+        "img": "img/fetured-item2.jpg",
+        "color": "red",
+        "size": "XII"
     },
 
     {
         "id_product": 3,
         "product_name": "MANGO PEOPLE T-SHIRT",
         "price": 52,
-        "img": "img/fetured-item3.jpg"
+        "img": "img/fetured-item3.jpg",
+        "color": "red",
+        "size": "XII"
     },
 
     {
         "id_product": 4,
         "product_name": "MANGO PEOPLE T-SHIRT",
         "price": 52,
-        "img": "img/fetured-item4.jpg"
+        "img": "img/fetured-item4.jpg",
+        "color": "red",
+        "size": "XII"
     },
 
     {
         "id_product": 5,
         "product_name": "MANGO PEOPLE T-SHIRT",
         "price": 52,
-        "img": "img/fetured-item5.jpg"
+        "img": "img/fetured-item5.jpg",
+        "color": "red",
+        "size": "XII"
     },
 
     {
         "id_product": 6,
         "product_name": "MANGO PEOPLE T-SHIRT",
         "price": 52,
-        "img": "img/fetured-item6.jpg"
+        "img": "img/fetured-item6.jpg",
+        "color": "red",
+        "size": "XII"
     },
 
     {
         "id_product": 7,
         "product_name": "MANGO PEOPLE T-SHIRT",
         "price": 52,
-        "img": "img/fetured-item7.jpg"
+        "img": "img/fetured-item7.jpg",
+        "color": "red",
+        "size": "XII"
     },
 
     {
@@ -52,6 +66,97 @@
         "product_name": "MANGO PEOPLE T-SHIRT",
         "price": 52,
         "img": "img/fetured-item8.jpg",
-        "prod": "true"
+        "color": "red",
+        "size": "XII"
+    },
+    
+    {
+        "id_product": 9,
+        "product_name": "MANGO PEOPLE T-SHIRT",
+        "price": 52,
+        "img": "img/product1.jpg",
+        "color": "red",
+        "size": "XII"
+    },
+
+    {
+        "id_product": 10,
+        "product_name": "MANGO PEOPLE T-SHIRT",
+        "price": 52,
+        "img": "img/product2.jpg",
+        "color": "red",
+        "size": "XII"
+    },
+
+    {
+        "id_product": 11,
+        "product_name": "MANGO PEOPLE T-SHIRT",
+        "price": 52,
+        "img": "img/product3.jpg",
+        "color": "red",
+        "size": "XII"
+    },
+
+    {
+        "id_product": 12,
+        "product_name": "MANGO PEOPLE T-SHIRT",
+        "price": 52,
+        "img": "img/product4.jpg",
+        "color": "red",
+        "size": "XII"
+    },
+
+    {
+        "id_product": 13,
+        "product_name": "MANGO PEOPLE T-SHIRT",
+        "price": 52,
+        "img": "img/product5.jpg",
+        "color": "red",
+        "size": "XII"
+    },
+
+    {
+        "id_product": 14,
+        "product_name": "MANGO PEOPLE T-SHIRT",
+        "price": 52,
+        "img": "img/product6.jpg",
+        "color": "red",
+        "size": "XII"
+    },
+
+    {
+        "id_product": 15,
+        "product_name": "BLAZE LEGGINGS",
+        "price": 52,
+        "img": "img/add_items1.jpg",
+        "color": "red",
+        "size": "XII"
+    },
+
+    {
+        "id_product": 16,
+        "product_name": "ALEXA SWEATER",
+        "price": 52,
+        "img": "img/add_items2.jpg",
+        "color": "red",
+        "size": "XII"
+    },
+
+    {
+        "id_product": 17,
+        "product_name": "AGNES TOP",
+        "price": 52,
+        "img": "img/add_items3.jpg",
+        "color": "red",
+        "size": "XII"
+    },
+
+    {
+        "id_product": 18,
+        "product_name": "SYLVA SWEATER",
+        "price": 52,
+        "img": "img/add_items4.jpg",
+        "color": "red",
+        "size": "XII"
     }
 ]

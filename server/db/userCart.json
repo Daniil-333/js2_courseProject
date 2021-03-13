@@ -25,14 +25,6 @@
             "price": 52,
             "img": "img/fetured-item5.jpg",
             "subPrice": 52
-        },
-        {
-            "quantity": 1,
-            "id_product": 2,
-            "product_name": "MANGO PEOPLE T-SHIRT",
-            "price": 52,
-            "img": "img/fetured-item2.jpg",
-            "subPrice": 52
         }
     ]
 }

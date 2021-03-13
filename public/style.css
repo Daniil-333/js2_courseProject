@@ -11,6 +11,9 @@ a {
 summary {
   list-style-type: none;
 }
+summary::-webkit-details-marker {
+  display: none;
+}
 summary:focus {
   outline: 0;
 }
@@ -1617,6 +1620,11 @@ summary:focus {
   padding: 4px 0 4px 10px;
   box-sizing: border-box;
 }
+.shop-cart .container .shop-cart__item .delete {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
 .shop-cart .container .shop-cart__item .shipping,
 .shop-cart .container .shop-cart__item .subtotal,
 .shop-cart .container .shop-cart__item .delete {
@@ -2121,3 +2129,4 @@ summary:focus {
     font-size: 10px;
   }
 }
+/*# sourceMappingURL=style.css.map */

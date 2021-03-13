@@ -93,5 +93,10 @@
         "time": "March 11th 2021, 10:46:33 am",
         "prod_name": "MANGO PEOPLE T-SHIRT",
         "action": "add"
+    },
+    {
+        "time": "March 12th 2021, 5:53:17 pm",
+        "prod_name": "MANGO PEOPLE T-SHIRT",
+        "action": "remove"
     }
 ]

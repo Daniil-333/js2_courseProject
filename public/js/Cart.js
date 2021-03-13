@@ -1,15 +1,13 @@
 import {CartItem} from "./CartItem.js";
 
 export const Cart = {
-    inject: ['API', 'getJson', 'putJson', 'postJson', 'deleteJson'],
+    inject: ['getJson', 'putJson', 'postJson', 'deleteJson'],
     components: {
-        CartItem
+        CartItem,
     },
     data() {
         return {
             showCart: false,
-            cartUrl: '/getBasket.json',
-            // imgCart: 'https://placehold.it/50x100',
             cartItems: [],
         }
     },
@@ -84,6 +82,7 @@ export const Cart = {
                         <a v-if="cartItems.length" href="checkout.html" class="cart-drop__button">Checkout</a>
                         <a v-if="cartItems.length" href="shopping-cart.html" class="cart-drop__button">Go to cart</a>
                     </div>
-               </div>
+               </div>   
     `
 };
+
