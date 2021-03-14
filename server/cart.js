@@ -5,7 +5,11 @@ const add = (cart, req) => {
 
 const change = (cart, req) => {
    const find = cart.contents.find(el => el.id_product === +req.params.id);
-   find.quantity += req.body.quantity;
+    if (req.body.inp) {
+        find.quantity = req.body.quantity;
+    }else {
+        find.quantity += req.body.quantity;
+    }
    return { newCart: JSON.stringify(cart, null, 4), name: find.product_name };
 };
 

@@ -59,14 +59,13 @@ export const Cart = {
                     })
             }
         },
-        changeQuantity(prod) {
-            console.dir(prod.quantity);
-            // this.putJson(`/api/cart/${prod.id_product}`, { quantity: prod.quantity,  })
-            //     .then(data => {
-            //         if (data.result) {
-            //            return;
-            //         }
-            //     });
+        changeQuantity(product) {
+            this.putJson(`/api/cart/${product.id_product}`, { quantity: +product.quantity, inp:true})
+                .then(data => {
+                    if (data.result) {
+                       return +product.quantity;
+                    }
+                });
         },
         clear() {
             this.deleteJson(`/api/cart/`)

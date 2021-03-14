@@ -3,7 +3,7 @@
     "countGoods": 2,
     "contents": [
         {
-            "quantity": 4,
+            "quantity": 1,
             "id_product": 15,
             "product_name": "BLAZE LEGGINGS",
             "price": 52,
@@ -20,6 +20,18 @@
             "img": "img/fetured-item7.jpg",
             "color": "Red",
             "size": "XII",
+            "subPrice": 52
+        },
+        {
+            "quantity": 3,
+            "id_product": 2,
+            "product_name": "MANGO PEOPLE T-SHIRT",
+            "price": 52,
+            "img": "img/fetured-item2.jpg",
+            "color": "Red",
+            "size": "XII",
+            "material": "Cotton",
+            "designer": "Binburhan",
             "subPrice": 52
         }
     ]
