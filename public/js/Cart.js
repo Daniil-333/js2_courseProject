@@ -16,7 +16,7 @@ export const Cart = {
     data() {
         return {
             showCart: false,
-            cartItems: [],
+            cartItems: []
         }
     },
     methods: {
@@ -59,11 +59,20 @@ export const Cart = {
                     })
             }
         },
-        clearCart() {
+        changeQuantity(prod) {
+            console.dir(prod.quantity);
+            // this.putJson(`/api/cart/${prod.id_product}`, { quantity: prod.quantity,  })
+            //     .then(data => {
+            //         if (data.result) {
+            //            return;
+            //         }
+            //     });
+        },
+        clear() {
             this.deleteJson(`/api/cart/`)
                     .then(data => {
                         if (data.result) {
-                            this.cartItems.length = 0;
+                            this.cartItems = [];
                         }
                     });
         }
@@ -83,7 +92,7 @@ export const Cart = {
                 }
             });
     },
-    template: `<div v-if = "sizecart==='small'" class="cart">
+    template: `<div v-if = "sizecart ==='small'" class="cart">
                     <img class="cart__img" src="img/basket.png" alt="Basket" @click="showCart = !showCart">
                     <div class="cart-drop" v-show="showCart">
                         <p class="cart-drop__empty" v-if="!cartItems.length">Корзина пуста</p>
@@ -117,9 +126,10 @@ export const Cart = {
                         :color="item.color"
                         :cartItem="item"
                         @remove="remove"
+                        @changeQuantity="changeQuantity"
                         ></cart-item-big>
                         <div class="shop-cart__buttons">
-                        <button @click="clearCart()" class="shop-cart__button">Clear shopping cart</button>
+                        <button @click="clear" class="shop-cart__button">Clear shopping cart</button>
                         <a href="product.html" class="shop-cart__button">Continue shopping</a>
                     </div>
                     <div class="shop-cart__forms">

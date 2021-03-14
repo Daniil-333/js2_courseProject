@@ -4,7 +4,9 @@
         "price": 52,
         "img": "img/fetured-item1.jpg",
         "color": "Red",
-        "size": "XII"
+        "size": "XII",
+        "material": "Cotton",
+        "designer": "Binburhan"
     },
 
     {
@@ -13,7 +15,9 @@
         "price": 52,
         "img": "img/fetured-item2.jpg",
         "color": "Red",
-        "size": "XII"
+        "size": "XII",
+        "material": "Cotton",
+        "designer": "Binburhan"
     },
 
     {
@@ -22,7 +26,9 @@
         "price": 52,
         "img": "img/fetured-item3.jpg",
         "color": "Red",
-        "size": "XII"
+        "size": "XII",
+        "material": "Cotton",
+        "designer": "Binburhan"
     },
 
     {
@@ -31,7 +37,9 @@
         "price": 52,
         "img": "img/fetured-item4.jpg",
         "color": "Red",
-        "size": "XII"
+        "size": "XII",
+        "material": "Cotton",
+        "designer": "Binburhan"
     },
 
     {
@@ -40,7 +48,9 @@
         "price": 52,
         "img": "img/fetured-item5.jpg",
         "color": "Red",
-        "size": "XII"
+        "size": "XII",
+        "material": "Cotton",
+        "designer": "Binburhan"
     },
 
     {
@@ -49,7 +59,9 @@
         "price": 52,
         "img": "img/fetured-item6.jpg",
         "color": "Red",
-        "size": "XII"
+        "size": "XII",
+        "material": "Cotton",
+        "designer": "Binburhan"
     },
 
     {
@@ -58,7 +70,9 @@
         "price": 52,
         "img": "img/fetured-item7.jpg",
         "color": "Red",
-        "size": "XII"
+        "size": "XII",
+        "material": "Cotton",
+        "designer": "Binburhan"
     },
 
     {
@@ -67,7 +81,9 @@
         "price": 52,
         "img": "img/fetured-item8.jpg",
         "color": "Red",
-        "size": "XII"
+        "size": "XII",
+        "material": "Cotton",
+        "designer": "Binburhan"
     },
     
     {
@@ -76,7 +92,9 @@
         "price": 52,
         "img": "img/product1.jpg",
         "color": "Red",
-        "size": "XII"
+        "size": "XII",
+        "material": "Cotton",
+        "designer": "Binburhan"
     },
 
     {
@@ -85,7 +103,9 @@
         "price": 52,
         "img": "img/product2.jpg",
         "color": "Red",
-        "size": "XII"
+        "size": "XII",
+        "material": "Cotton",
+        "designer": "Binburhan"
     },
 
     {
@@ -94,7 +114,9 @@
         "price": 52,
         "img": "img/product3.jpg",
         "color": "Red",
-        "size": "XII"
+        "size": "XII",
+        "material": "Cotton",
+        "designer": "Binburhan"
     },
 
     {
@@ -103,7 +125,9 @@
         "price": 52,
         "img": "img/product4.jpg",
         "color": "Red",
-        "size": "XII"
+        "size": "XII",
+        "material": "Cotton",
+        "designer": "Binburhan"
     },
 
     {
@@ -112,7 +136,9 @@
         "price": 52,
         "img": "img/product5.jpg",
         "color": "Red",
-        "size": "XII"
+        "size": "XII",
+        "material": "Cotton",
+        "designer": "Binburhan"
     },
 
     {
@@ -121,7 +147,9 @@
         "price": 52,
         "img": "img/product6.jpg",
         "color": "Red",
-        "size": "XII"
+        "size": "XII",
+        "material": "Cotton",
+        "designer": "Binburhan"
     },
 
     {
@@ -130,7 +158,9 @@
         "price": 52,
         "img": "img/add_items1.jpg",
         "color": "Red",
-        "size": "XII"
+        "size": "XII",
+        "material": "Cotton",
+        "designer": "Binburhan"
     },
 
     {
@@ -139,7 +169,9 @@
         "price": 52,
         "img": "img/add_items2.jpg",
         "color": "Red",
-        "size": "XII"
+        "size": "XII",
+        "material": "Cotton",
+        "designer": "Binburhan"
     },
 
     {
@@ -148,7 +180,9 @@
         "price": 52,
         "img": "img/add_items3.jpg",
         "color": "Red",
-        "size": "XII"
+        "size": "XII",
+        "material": "Cotton",
+        "designer": "Binburhan"
     },
 
     {
@@ -157,6 +191,8 @@
         "price": 52,
         "img": "img/add_items4.jpg",
         "color": "Red",
-        "size": "XII"
+        "size": "XII",
+        "material": "Cotton",
+        "designer": "Binburhan"
     }
 ]

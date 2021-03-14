@@ -1,15 +1,11 @@
 import {ProductItem} from "./ProductItem.js";
-const pages = {
-    main: `/api/products/8`,
-    prod: `/api/products/9`,
-    single: `/api/products/4`,
-}
+import {ProductItemBig} from "./ProductItemBig.js";
 
 export const Products = {
-    props: [],
     inject: ['getJson'],
     components: {
-        ProductItem
+        ProductItem,
+        ProductItemBig
     },
     props: {
         page: {
@@ -20,6 +16,11 @@ export const Products = {
     data() {
         return {
             products: [],
+            pages: {
+                main: `/api/products/8`,
+                prod: `/api/products/9`,
+                single: `/api/products/4`
+            }
         }
     },
     computed: {
@@ -28,7 +29,7 @@ export const Products = {
         }
     },
     mounted() {
-        this.getJson(pages[this.page])
+        this.getJson(this.pages[this.page])
             .then(data => {
                 this.products = data;
             });

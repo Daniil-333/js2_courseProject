@@ -348,5 +348,195 @@
         "time": "March 13th 2021, 3:21:30 pm",
         "prod_name": "MANGO PEOPLE T-SHIRT",
         "action": "remove"
+    },
+    {
+        "time": "March 13th 2021, 5:50:46 pm",
+        "prod_name": "Clear cart",
+        "action": "clear"
+    },
+    {
+        "time": "March 13th 2021, 6:01:41 pm",
+        "prod_name": "MANGO PEOPLE T-SHIRT",
+        "action": "add"
+    },
+    {
+        "time": "March 13th 2021, 6:01:41 pm",
+        "prod_name": "BLAZE LEGGINGS",
+        "action": "add"
+    },
+    {
+        "time": "March 13th 2021, 6:51:23 pm",
+        "prod_name": "MANGO PEOPLE T-SHIRT",
+        "action": "remove"
+    },
+    {
+        "time": "March 13th 2021, 6:51:28 pm",
+        "prod_name": "MANGO PEOPLE T-SHIRT",
+        "action": "add"
+    },
+    {
+        "time": "March 13th 2021, 6:51:28 pm",
+        "prod_name": "MANGO PEOPLE T-SHIRT",
+        "action": "add"
+    },
+    {
+        "time": "March 14th 2021, 5:50:04 am",
+        "prod_name": "BLAZE LEGGINGS",
+        "action": "change"
+    },
+    {
+        "time": "March 14th 2021, 5:50:06 am",
+        "prod_name": "BLAZE LEGGINGS",
+        "action": "change"
+    },
+    {
+        "time": "March 14th 2021, 5:50:07 am",
+        "prod_name": "BLAZE LEGGINGS",
+        "action": "change"
+    },
+    {
+        "time": "March 14th 2021, 5:50:09 am",
+        "prod_name": "BLAZE LEGGINGS",
+        "action": "change"
+    },
+    {
+        "time": "March 14th 2021, 5:50:09 am",
+        "prod_name": "BLAZE LEGGINGS",
+        "action": "change"
+    },
+    {
+        "time": "March 14th 2021, 5:50:10 am",
+        "prod_name": "BLAZE LEGGINGS",
+        "action": "change"
+    },
+    {
+        "time": "March 14th 2021, 5:50:11 am",
+        "prod_name": "BLAZE LEGGINGS",
+        "action": "change"
+    },
+    {
+        "time": "March 14th 2021, 5:50:11 am",
+        "prod_name": "BLAZE LEGGINGS",
+        "action": "change"
+    },
+    {
+        "time": "March 14th 2021, 5:50:11 am",
+        "prod_name": "BLAZE LEGGINGS",
+        "action": "change"
+    },
+    {
+        "time": "March 14th 2021, 5:50:11 am",
+        "prod_name": "BLAZE LEGGINGS",
+        "action": "change"
+    },
+    {
+        "time": "March 14th 2021, 6:37:13 am",
+        "prod_name": "BLAZE LEGGINGS",
+        "action": "change"
+    },
+    {
+        "time": "March 14th 2021, 6:37:15 am",
+        "prod_name": "BLAZE LEGGINGS",
+        "action": "change"
+    },
+    {
+        "time": "March 14th 2021, 6:37:20 am",
+        "prod_name": "BLAZE LEGGINGS",
+        "action": "change"
+    },
+    {
+        "time": "March 14th 2021, 6:37:21 am",
+        "prod_name": "BLAZE LEGGINGS",
+        "action": "change"
+    },
+    {
+        "time": "March 14th 2021, 7:50:32 am",
+        "prod_name": "BLAZE LEGGINGS",
+        "action": "change"
+    },
+    {
+        "time": "March 14th 2021, 8:14:30 am",
+        "prod_name": "BLAZE LEGGINGS",
+        "action": "change"
+    },
+    {
+        "time": "March 14th 2021, 8:22:50 am",
+        "prod_name": "BLAZE LEGGINGS",
+        "action": "change"
+    },
+    {
+        "time": "March 14th 2021, 8:26:54 am",
+        "prod_name": "BLAZE LEGGINGS",
+        "action": "change"
+    },
+    {
+        "time": "March 14th 2021, 8:30:37 am",
+        "prod_name": "BLAZE LEGGINGS",
+        "action": "change"
+    },
+    {
+        "time": "March 14th 2021, 11:39:00 am",
+        "prod_name": "BLAZE LEGGINGS",
+        "action": "change"
+    },
+    {
+        "time": "March 14th 2021, 11:39:02 am",
+        "prod_name": "BLAZE LEGGINGS",
+        "action": "change"
+    },
+    {
+        "time": "March 14th 2021, 11:39:04 am",
+        "prod_name": "BLAZE LEGGINGS",
+        "action": "change"
+    },
+    {
+        "time": "March 14th 2021, 11:44:16 am",
+        "prod_name": "MANGO PEOPLE T-SHIRT",
+        "action": "add"
+    },
+    {
+        "time": "March 14th 2021, 11:44:23 am",
+        "prod_name": "BLAZE LEGGINGS",
+        "action": "change"
+    },
+    {
+        "time": "March 14th 2021, 11:44:23 am",
+        "prod_name": "BLAZE LEGGINGS",
+        "action": "change"
+    },
+    {
+        "time": "March 14th 2021, 11:44:23 am",
+        "prod_name": "BLAZE LEGGINGS",
+        "action": "change"
+    },
+    {
+        "time": "March 14th 2021, 11:44:23 am",
+        "prod_name": "BLAZE LEGGINGS",
+        "action": "change"
+    },
+    {
+        "time": "March 14th 2021, 11:44:24 am",
+        "prod_name": "BLAZE LEGGINGS",
+        "action": "change"
+    },
+    {
+        "time": "March 14th 2021, 11:44:24 am",
+        "prod_name": "BLAZE LEGGINGS",
+        "action": "change"
+    },
+    {
+        "time": "March 14th 2021, 11:44:24 am",
+        "prod_name": "BLAZE LEGGINGS",
+        "action": "change"
+    },
+    {
+        "time": "March 14th 2021, 11:53:19 am",
+        "prod_name": "MANGO PEOPLE T-SHIRT",
+        "action": "remove"
+    },
+    {
+        "time": "March 14th 2021, 11:53:21 am",
+        "prod_name": "MANGO PEOPLE T-SHIRT",
+        "action": "remove"
     }
 ]

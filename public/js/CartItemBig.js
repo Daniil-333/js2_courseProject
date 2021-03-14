@@ -1,6 +1,6 @@
 export const CartItemBig = {
     props: ['img', 'cartItem'],
-    emits: ['remove'],
+    emits: ['remove', 'changeQuantity'],
     template: `
         <div class="shop-cart__item">
             <div class="product-details">
@@ -20,7 +20,7 @@ export const CartItemBig = {
                 </div>
             </div>
             <p class="product-parameters unit-price">$ {{cartItem.price}}</p>
-            <p class="product-parameters quantity"><input type="number" v-model="cartItem.quantity" min="1"
+            <p class="product-parameters quantity"><input type="number" v-model="cartItem.quantity" min="1" @change="$emit('changeQuantity', cartItem)"
                                                             class="product-parameters__input"></p>
             <p class="product-parameters shipping">Free</p>
             <p class="product-parameters subtotal">$ {{cartItem.quantity * cartItem.price}}</p>

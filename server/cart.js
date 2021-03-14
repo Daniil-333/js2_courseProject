@@ -15,8 +15,14 @@ const remove = (cart, req) => {
     return { newCart: JSON.stringify(cart, null, 4), name: find.product_name };
 };
 
+const clear = (cart) => {
+    cart.contents = [];
+    return { newCart: JSON.stringify(cart, null, 4), name: 'Clear cart' };
+};
+
 module.exports = {
     add,
     change,
-    remove
+    remove,
+    clear
 };

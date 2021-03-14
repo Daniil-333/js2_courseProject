@@ -32,15 +32,15 @@ summary {
 }
 
 /*Универсальные классы*/
-
+/*Убирает стрелки у input[type="number"]*/
 .no-arrow {
   -moz-appearance: textfield;
 }
-
 .no-arrow::-webkit-inner-spin-button {
   display: none;
 }
 
+/*Логотип*/
 .logo () {
   display: inline-flex;
   align-items: center;
@@ -69,6 +69,7 @@ summary {
   }
 }
 
+/*Выпадающее меню в header и nav*/
 .drop {
   background-color: #ffffff;
   border-radius: 5px;
@@ -126,6 +127,7 @@ summary {
   }
 }
 
+/*Блок с продуктами>*/
 .product-box {
   display: flex;
   justify-content: space-between;
@@ -229,6 +231,7 @@ summary {
   }
 }
 
+/*Блок delivery-sale-quality*/
 .sale-side {
   padding: 50px 35px 65px;
   box-sizing: border-box;
@@ -264,6 +267,7 @@ summary {
   }
 }
 
+/*Breadcrumbs*/
 .new-arrival {
   background-color: #f8f3f4;
   padding: 4% 0;
@@ -309,6 +313,7 @@ summary {
   }
 }
 
+/*Рейтинг пятизвёздочный*/
 .raiting {
   .fa {
     font-size: 13px;
@@ -319,6 +324,7 @@ summary {
   }
 }
 
+/*Значок удаления*/
 .cancel {
   font-size: 16px;
   line-height: 1.2;
@@ -332,7 +338,6 @@ summary {
 }
 
 /*Основные блоки index.html*/
-
 .header {
   padding: 30px 0;
   border: 1px solid #ececec;
@@ -1147,7 +1152,6 @@ summary {
 }
 
 /*Основной контент других страниц*/
-
 .main-product {
   padding: 60px 0;
 
@@ -1994,7 +1998,7 @@ summary {
 }
 
 .main-single-page {
-  .single-page-slider {
+  .slider-product {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -2002,7 +2006,7 @@ summary {
     border: 1px solid #eaeaea;
     padding-bottom: 30px;
 
-    .single-page-slider-link {
+    &__link {
       width: 47px;
       background-color: rgba(42, 42, 42, 0.14);
       display: flex;
@@ -2022,7 +2026,7 @@ summary {
     }
   }
 
-  .confirm-order {
+  .product-single {
     .container {
       display: flex;
       flex-direction: column;
@@ -2031,142 +2035,141 @@ summary {
       background-color: #ffffff;
       padding: 70px 0;
       transform: translateY(-60px);
+    }
 
-      .confirm-order-info {
-        max-width: 640px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-bottom: 1px solid #eaeaea;
-        padding-bottom: 45px;
-        margin-bottom: 60px;
+    &__info {
+      max-width: 640px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-bottom: 1px solid #eaeaea;
+      padding-bottom: 45px;
+      margin-bottom: 60px;
+    }
 
-        .confirm-order-collection {
-          position: relative;
-          font-size: 14px;
-          line-height: 24px;
-          font-weight: 700;
-          color: @siteColor;
-          text-transform: uppercase;
-          text-align: center;
-          border-bottom: 1px solid #eaeaea;
-          padding-bottom: 10px;
-          margin-bottom: 15px;
+    &__collection {
+      position: relative;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 700;
+      color: @siteColor;
+      text-transform: uppercase;
+      text-align: center;
+      border-bottom: 1px solid #eaeaea;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
 
-          &::before {
-            content: "";
-            position: absolute;
-            left: 27%;
-            top: 100%;
-            width: 63px;
-            height: 3px;
-            background-color: #ef5b70;
-          }
+      &::before {
+        content: "";
+        position: absolute;
+        left: 27%;
+        top: 100%;
+        width: 63px;
+        height: 3px;
+        background-color: #ef5b70;
+      }
+    }
+
+    &__heading {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-align: center;
+      color: #4d4d4d;
+      margin-bottom: 65px;
+    }
+
+    &__description {
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 300;
+      color: #5e5e5e;
+      text-align: center;
+      padding-bottom: 25px;
+    }
+
+    &__props {
+      display: flex;
+      justify-content: space-between;
+      min-width: 335px;
+      margin-left: 4%;
+      margin-bottom: 35px;
+    }
+
+    &__prop {
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 700;
+      color: #b9b9b9;
+
+      &__prop-value {
+        color: #2f2f2f;
+      }
+    }
+
+    &__price {
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: 700;
+      color: #ef5b70;
+    }
+
+    .product-params {
+      display: flex;
+      max-width: 540px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      &__title {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 700;
+        color: #2f2f2f;
+        text-transform: uppercase;
+        padding-bottom: 15px;
+      }
+
+      &__input {
+        width: 144px;
+        height: 35px;
+        background-color: #ffffff;
+        border: 1px solid #eaeaea;
+        font-size: 13px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #bcbcbc;
+        padding: 10px 15px;
+        box-sizing: border-box;
+        cursor: pointer;
+        transition: border 1s;
+
+        &:hover {
+          border: 1px solid #000;
         }
-
-        .confirm-order-h2 {
-          font-size: 18px;
-          line-height: 24px;
-          font-weight: 900;
-          text-transform: uppercase;
-          text-align: center;
-          color: #4d4d4d;
-          margin-bottom: 65px;
-        }
-
-        .confirm-order-description {
-          font-size: 14px;
-          line-height: 24px;
-          font-weight: 300;
-          color: #5e5e5e;
-          text-align: center;
-          padding-bottom: 25px;
-        }
-
-        .property-items {
-          display: flex;
-          justify-content: space-between;
-          min-width: 335px;
-          margin-left: 4%;
-          margin-bottom: 35px;
-
-          .property-item {
-            font-size: 14px;
-            line-height: 24px;
-            font-weight: 700;
-            color: #b9b9b9;
-
-            .value-item {
-              color: #2f2f2f;
-            }
-          }
-        }
-
-        .confirm-order-price {
-          font-size: 24px;
-          line-height: 24px;
-          font-weight: 700;
-          color: #ef5b70;
+      }
+      .input-color {
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 12px;
+          height: 12px;
+          background-color: #ef5b70;
         }
       }
 
-      .confirm-order-edit {
-        display: flex;
+      .product-add {
         max-width: 540px;
-        justify-content: space-between;
-        flex-wrap: wrap;
-
-        .confirm-order-title {
-          font-size: 14px;
-          line-height: 24px;
-          font-weight: 700;
-          color: #2f2f2f;
-          text-transform: uppercase;
-          padding-bottom: 15px;
-        }
-
-        .confirm-order-input {
-          width: 144px;
-          height: 35px;
-          background-color: #ffffff;
-          border: 1px solid #eaeaea;
-          font-size: 13px;
-          line-height: 24px;
-          font-weight: 400;
-          color: #bcbcbc;
-          padding: 10px 15px;
-          box-sizing: border-box;
-          cursor: pointer;
-          transition: border 1s;
-
-          &:hover {
-            border: 1px solid #000;
-          }
-
-          .confirm-order-color {
-            &::before {
-              content: "";
-              display: inline-block;
-              width: 12px;
-              height: 12px;
-              background-color: #ef5b70;
-            }
-          }
-        }
-
-        .confirm-order-buy {
-          max-width: 540px;
-          background: url("img/basket_red.png") 36% 46% no-repeat #ffffff;
-          border: 1px solid #ef5b70;
-          margin-top: 25px;
-          font-size: 16px;
-          line-height: 1.2;
-          font-weight: 700;
-          color: #ef5b70;
-          padding: 15px 225px;
-          box-sizing: border-box;
-          cursor: pointer;
-        }
+        background: url("img/basket_red.png") 36% 46% no-repeat #ffffff;
+        border: 1px solid #ef5b70;
+        margin-top: 25px;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 700;
+        color: #ef5b70;
+        padding: 15px 225px;
+        box-sizing: border-box;
+        cursor: pointer;
       }
     }
   }
@@ -2187,7 +2190,6 @@ summary {
 }
 
 /*Медиа-запросы*/
-
 @media screen and (max-width: 1200px) {
   .container {
     padding: 0 15px;

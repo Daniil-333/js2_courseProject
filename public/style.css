@@ -22,12 +22,15 @@ summary:focus {
   max-width: 1140px;
 }
 /*Универсальные классы*/
+/*Убирает стрелки у input[type="number"]*/
 .no-arrow {
   -moz-appearance: textfield;
 }
 .no-arrow::-webkit-inner-spin-button {
   display: none;
 }
+/*Логотип*/
+/*Выпадающее меню в header и nav*/
 .drop {
   background-color: #ffffff;
   border-radius: 5px;
@@ -77,6 +80,7 @@ summary:focus {
   text-align: right;
   margin-top: 10px;
 }
+/*Блок с продуктами>*/
 .product-box {
   display: flex;
   justify-content: space-between;
@@ -164,6 +168,7 @@ summary:focus {
 .product-box .product .product__add:active {
   outline: none;
 }
+/*Блок delivery-sale-quality*/
 .sale-side {
   padding: 50px 35px 65px;
   box-sizing: border-box;
@@ -194,6 +199,7 @@ summary:focus {
   color: #fbfbfb;
   padding-bottom: 12px;
 }
+/*Breadcrumbs*/
 .new-arrival {
   background-color: #f8f3f4;
   padding: 4% 0;
@@ -229,6 +235,7 @@ summary:focus {
 .new-arrival .container .new-arrival__breadcrumbs .new-arrival__link:nth-of-type(3)::after {
   content: none;
 }
+/*Рейтинг пятизвёздочный*/
 .raiting .fa {
   font-size: 13px;
   line-height: 1.2;
@@ -236,6 +243,7 @@ summary:focus {
   text-transform: uppercase;
   color: #e4af48;
 }
+/*Значок удаления*/
 .cancel {
   font-size: 16px;
   line-height: 1.2;
@@ -1769,7 +1777,7 @@ summary:focus {
   background-color: #ffffff;
   color: #f16d7f;
 }
-.main-single-page .single-page-slider {
+.main-single-page .slider-product {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1777,23 +1785,23 @@ summary:focus {
   border: 1px solid #eaeaea;
   padding-bottom: 30px;
 }
-.main-single-page .single-page-slider .single-page-slider-link {
+.main-single-page .slider-product__link {
   width: 47px;
   background-color: rgba(42, 42, 42, 0.14);
   display: flex;
   justify-content: center;
 }
-.main-single-page .single-page-slider .single-page-slider-link:hover {
+.main-single-page .slider-product__link:hover {
   opacity: 0.7;
 }
-.main-single-page .single-page-slider .single-page-slider-link .fa {
+.main-single-page .slider-product__link .fa {
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   color: #ffffff;
   padding: 11px 0;
 }
-.main-single-page .confirm-order .container {
+.main-single-page .product-single .container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1802,7 +1810,7 @@ summary:focus {
   padding: 70px 0;
   transform: translateY(-60px);
 }
-.main-single-page .confirm-order .container .confirm-order-info {
+.main-single-page .product-single__info {
   max-width: 640px;
   display: flex;
   flex-direction: column;
@@ -1811,7 +1819,7 @@ summary:focus {
   padding-bottom: 45px;
   margin-bottom: 60px;
 }
-.main-single-page .confirm-order .container .confirm-order-info .confirm-order-collection {
+.main-single-page .product-single__collection {
   position: relative;
   font-size: 14px;
   line-height: 24px;
@@ -1823,7 +1831,7 @@ summary:focus {
   padding-bottom: 10px;
   margin-bottom: 15px;
 }
-.main-single-page .confirm-order .container .confirm-order-info .confirm-order-collection::before {
+.main-single-page .product-single__collection::before {
   content: "";
   position: absolute;
   left: 27%;
@@ -1832,7 +1840,7 @@ summary:focus {
   height: 3px;
   background-color: #ef5b70;
 }
-.main-single-page .confirm-order .container .confirm-order-info .confirm-order-h2 {
+.main-single-page .product-single__heading {
   font-size: 18px;
   line-height: 24px;
   font-weight: 900;
@@ -1841,7 +1849,7 @@ summary:focus {
   color: #4d4d4d;
   margin-bottom: 65px;
 }
-.main-single-page .confirm-order .container .confirm-order-info .confirm-order-description {
+.main-single-page .product-single__description {
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
@@ -1849,35 +1857,35 @@ summary:focus {
   text-align: center;
   padding-bottom: 25px;
 }
-.main-single-page .confirm-order .container .confirm-order-info .property-items {
+.main-single-page .product-single__props {
   display: flex;
   justify-content: space-between;
   min-width: 335px;
   margin-left: 4%;
   margin-bottom: 35px;
 }
-.main-single-page .confirm-order .container .confirm-order-info .property-items .property-item {
+.main-single-page .product-single__prop {
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
   color: #b9b9b9;
 }
-.main-single-page .confirm-order .container .confirm-order-info .property-items .property-item .value-item {
+.main-single-page .product-single__prop__prop-value {
   color: #2f2f2f;
 }
-.main-single-page .confirm-order .container .confirm-order-info .confirm-order-price {
+.main-single-page .product-single__price {
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
   color: #ef5b70;
 }
-.main-single-page .confirm-order .container .confirm-order-edit {
+.main-single-page .product-single .product-params {
   display: flex;
   max-width: 540px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.main-single-page .confirm-order .container .confirm-order-edit .confirm-order-title {
+.main-single-page .product-single .product-params__title {
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
@@ -1885,7 +1893,7 @@ summary:focus {
   text-transform: uppercase;
   padding-bottom: 15px;
 }
-.main-single-page .confirm-order .container .confirm-order-edit .confirm-order-input {
+.main-single-page .product-single .product-params__input {
   width: 144px;
   height: 35px;
   background-color: #ffffff;
@@ -1899,17 +1907,17 @@ summary:focus {
   cursor: pointer;
   transition: border 1s;
 }
-.main-single-page .confirm-order .container .confirm-order-edit .confirm-order-input:hover {
+.main-single-page .product-single .product-params__input:hover {
   border: 1px solid #000;
 }
-.main-single-page .confirm-order .container .confirm-order-edit .confirm-order-input .confirm-order-color::before {
+.main-single-page .product-single .product-params .input-color::before {
   content: "";
   display: inline-block;
   width: 12px;
   height: 12px;
   background-color: #ef5b70;
 }
-.main-single-page .confirm-order .container .confirm-order-edit .confirm-order-buy {
+.main-single-page .product-single .product-params .product-add {
   max-width: 540px;
   background: url("img/basket_red.png") 36% 46% no-repeat #ffffff;
   border: 1px solid #ef5b70;
@@ -2122,3 +2130,4 @@ summary:focus {
     font-size: 10px;
   }
 }
+/*# sourceMappingURL=style.css.map */
