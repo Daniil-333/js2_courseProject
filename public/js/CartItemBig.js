@@ -4,7 +4,7 @@ export const CartItemBig = {
     template: `
         <div class="shop-cart__item">
             <div class="product-details">
-                <a href="#" class="product-details__link">
+                <a href="single-page.html" class="product-details__link">
                     <img :src="img" :alt="cartItem.product_name" class="product-details__img"></a>
                 <div class="product-info">
                     <h6 class="product-info__title">{{cartItem.product_name}}</h6>

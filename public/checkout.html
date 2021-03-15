@@ -19,8 +19,8 @@
                 <img src="img/logo.png" alt="Логотип" class="logo__img">
                 <span class="logo__title">bran<span class="logo__title_span">d</span></span>
             </a>
-            <details class="header__browse">
-                <summary class="header__summary">Browse</summary>
+            <details class="browse">
+                <summary class="browse__summary">Browse</summary>
                 <div class="drop">
                     <div class="drop__col">
                         <h3 class="drop__h3">Women</h3>
@@ -44,7 +44,6 @@
                         </ul>
                     </div>
                 </div>
-                </li>
             </details>
             <search ref="search"></search>
             <cart ref="cart"></cart>
@@ -377,37 +376,34 @@
             </nav>
         </div>
     </section>
-    <main class="main-checkout">
+    <main class="checkout">
         <div class="container">
-            <div class="accordion-menu">
-                <div class="accordion-menu-item shipping-adress">
-                    <input type="radio" id="accordion-menu-item-1" checked class="accordion-menu-input"
+            <div class="accordion">
+                <div class="accordion-item shipping-adress">
+                    <input type="radio" id="accordion-item__ship-addr" checked class="accordion__input"
                         name="accordion-menu">
-                    <label for="accordion-menu-item-1" class="accordion-menu-title">01. Shipping Adress</label>
+                    <label for="accordion-item__ship-addr" class="accordion__heading">01. Shipping Adress</label>
                     <div class="shipping-adress__forms">
                         <form action="#" class="shipping-adress__form">
-                            <p class="shipping-adress__h6">Check as a guest or register</p>
+                            <p class="shipping-adress__heading">Check as a guest or register</p>
                             <p class="shipping-adress__text">Register with us for future convenience</p>
-                            <label class="shipping-adress__radio shipping-adress__h6"><input type="radio"
-                                                                            name="register"
-                                                                                            class="shipping-adress__radio-input"><span class="shipping-adress__radio-span"></span>checkout as
-                                guest</label>
-                            <label class="shipping-adress__radio shipping-adress__h6"><input type="radio" name="register"
-                                                                                            class="shipping-adress__radio-input"
-                                                                checked><span class="shipping-adress__radio-span"></span>register</label>
-                            <p class="shipping-adress__h6">register and save time!</p>
+                            <label class="shipping-adress__radio shipping-adress__heading"><input type="radio"name="register"
+                                class="shipping-adress__radio-input"><span class="shipping-adress__radio-span"></span>checkout as guest</label>
+                            <label class="shipping-adress__radio shipping-adress__heading"><input type="radio" name="register"
+                                 class="shipping-adress__radio-input"checked><span class="shipping-adress__radio-span"></span>register</label>
+                            <p class="shipping-adress__heading">register and save time!</p>
                             <p class="shipping-adress__text">Register with us for future convenience</p>
                             <a href="#" class="shipping-adress__link">Fast and easy checkout</a>
                             <a href="#" class="shipping-adress__link">Easy access to your order history and status</a>
                             <button class="shipping-adress__button">Continue</button>
                         </form>
                         <form action="#" class="shipping-adress__form">
-                            <p class="shipping-adress__h6">Already registed?</p>
+                            <p class="shipping-adress__heading">Already registed?</p>
                             <p class="shipping-adress__text">Please log in below</p>
-                            <p class="shipping-adress__h6 shipping-adress__req-star">EMAIL ADDRESS <span
-                                    class="shipping-adress__req-span">*</span></p>
+                            <p class="shipping-adress__heading">EMAIL ADDRESS <span
+                                    class="shipping-adress__req-star">*</span></p>
                             <input type="email" class="shipping-adress__input" required>
-                            <p class="shipping-adress__h6 shipping-adress__req-star">PASSWORD <span class="shipping-adress__req-span">*</span></p>
+                            <p class="shipping-adress__heading">PASSWORD <span class="shipping-adress__req-star">*</span></p>
                             <input type="password" class="shipping-adress__input" required>
                             <p class="shipping-adress__req-fields">* Required Fileds</p>
                             <button class="shipping-adress__button">Log in</button>
@@ -415,25 +411,25 @@
                         </form>
                     </div>
                 </div>
-                <div class="accordion-menu-item billing-info">
-                    <input type="radio" id="accordion-menu-item-2" class="accordion-menu-input" name="accordion-menu">
-                    <label for="accordion-menu-item-2" class="accordion-menu-title">02. Billing Information</label>
+                <div class="accordion-item billing-info">
+                    <input type="radio" id="accordion-item__bill-info" class="accordion__input" name="accordion-menu">
+                    <label for="accordion-item__bill-info" class="accordion__heading">02. Billing Information</label>
                 </div>
-                <div class="accordion-menu-item shipping-info">
-                    <input type="radio" id="accordion-menu-item-3" class="accordion-menu-input" name="accordion-menu">
-                    <label for="accordion-menu-item-3" class="accordion-menu-title">03. Shipping Information</label>
+                <div class="accordion-item shipping-info">
+                    <input type="radio" id="accordion-item__ship-info" class="accordion__input" name="accordion-menu">
+                    <label for="accordion-item__ship-info" class="accordion__heading">03. Shipping Information</label>
                 </div>
-                <div class="accordion-menu-item shipping-method">
-                    <input type="radio" id="accordion-menu-item-4" class="accordion-menu-input" name="accordion-menu">
-                    <label for="accordion-menu-item-4" class="accordion-menu-title">04. Shipping Method</label>
+                <div class="accordion-item shipping-method">
+                    <input type="radio" id="accordion-item__ship-method" class="accordion__input" name="accordion-menu">
+                    <label for="accordion-item__ship-method" class="accordion__heading">04. Shipping Method</label>
                 </div>
-                <div class="accordion-menu-item payment method">
-                    <input type="radio" id="accordion-menu-item-5" class="accordion-menu-input" name="accordion-menu">
-                    <label for="accordion-menu-item-5" class="accordion-menu-title">05. Payment Method</label>
+                <div class="accordion-item payment method">
+                    <input type="radio" id="accordion-item__pay" class="accordion__input" name="accordion-menu">
+                    <label for="accordion-item__pay" class="accordion__heading">05. Payment Method</label>
                 </div>
-                <div class="accordion-menu-item order-review">
-                    <input type="radio" id="accordion-menu-item-6" class="accordion-menu-input" name="accordion-menu">
-                    <label for="accordion-menu-item-6" class="accordion-menu-title">06. Order Review</label>
+                <div class="accordion-item order-review">
+                    <input type="radio" id="accordion-item__order-review" class="accordion__input" name="accordion-menu">
+                    <label for="accordion-item__order-review" class="accordion__heading">06. Order Review</label>
                 </div>
             </div>
         </div>
@@ -455,8 +451,8 @@
             </article>
         </div>
         <div class="subscribe-form">
-            <h6 class="subscribe-container-h6">Subscribe</h6>
-            <p class="subscribe-container__subtitle">FOR OUR NEWLETTER AND PROMOTION</p>
+            <h6 class="subscribe-form__heading">Subscribe</h6>
+            <p class="subscribe-form__subtitle">FOR OUR NEWLETTER AND PROMOTION</p>
             <form action="#" class="send-form">
                 <input type="email" placeholder="Enter Your Email" class="send-form__input"><button class="send-form__button">Subscribe</button>
             </form>
@@ -465,7 +461,7 @@
 </section>
 <footer class="footer">
     <div class="container">
-        <div class="footer__content">
+        <div class="footer-content">
             <div class="footer__logo">
                 <a href="index.html" class="logo">
                     <img src="img/logo.png" alt="Логотип" class="logo__img">
@@ -480,30 +476,30 @@
                     Dynamically
                     optimize.</p>
             </div>
-            <div class="footer-menu">
-                <nav class="footer-menu__col">
-                    <p class="footer-menu__title">Company</p>
-                    <a href="#" class="footer-menu__link">Home</a>
-                    <a href="#" class="footer-menu__link">Shop</a>
-                    <a href="#" class="footer-menu__link">About</a>
-                    <a href="#" class="footer-menu__link">How It Work</a>
-                    <a href="#" class="footer-menu__link">Contact</a>
+            <div class="footer-nav">
+                <nav class="footer-nav__col">
+                    <p class="footer-nav__title">Company</p>
+                    <a href="#" class="footer-nav__link">Home</a>
+                    <a href="#" class="footer-nav__link">Shop</a>
+                    <a href="#" class="footer-nav__link">About</a>
+                    <a href="#" class="footer-nav__link">How It Work</a>
+                    <a href="#" class="footer-nav__link">Contact</a>
                 </nav>
-                <nav class="footer-menu__col">
-                    <p class="footer-menu__title">Information</p>
-                    <a href="#" class="footer-menu__link">Tearms & Condition</a>
-                    <a href="#" class="footer-menu__link">Privacy Policy</a>
-                    <a href="#" class="footer-menu__link">How to Buy</a>
-                    <a href="#" class="footer-menu__link">How to Sell</a>
-                    <a href="#" class="footer-menu__link">Promotion</a>
+                <nav class="footer-nav__col">
+                    <p class="footer-nav__title">Information</p>
+                    <a href="#" class="footer-nav__link">Tearms & Condition</a>
+                    <a href="#" class="footer-nav__link">Privacy Policy</a>
+                    <a href="#" class="footer-nav__link">How to Buy</a>
+                    <a href="#" class="footer-nav__link">How to Sell</a>
+                    <a href="#" class="footer-nav__link">Promotion</a>
                 </nav>
-                <nav class="footer-menu__col">
-                    <p class="footer-menu__title">Shop Category</p>
-                    <a href="#" class="footer-menu__link">Men</a>
-                    <a href="#" class="footer-menu__link">Women</a>
-                    <a href="#" class="footer-menu__link">Child</a>
-                    <a href="#" class="footer-menu__link">Apparel</a>
-                    <a href="#" class="footer-menu__link">Brows All</a>
+                <nav class="footer-nav__col">
+                    <p class="footer-nav__title">Shop Category</p>
+                    <a href="#" class="footer-nav__link">Men</a>
+                    <a href="#" class="footer-nav__link">Women</a>
+                    <a href="#" class="footer-nav__link">Child</a>
+                    <a href="#" class="footer-nav__link">Apparel</a>
+                    <a href="#" class="footer-nav__link">Brows All</a>
                 </nav>
             </div>
         </div>

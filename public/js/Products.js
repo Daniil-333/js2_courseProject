@@ -1,11 +1,9 @@
 import {ProductItem} from "./ProductItem.js";
-import {ProductItemBig} from "./ProductItemBig.js";
 
 export const Products = {
     inject: ['getJson'],
     components: {
         ProductItem,
-        ProductItemBig
     },
     props: {
         page: {
