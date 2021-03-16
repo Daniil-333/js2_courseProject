@@ -60,8 +60,11 @@ const App = {
             })
                 .then(result => result.json())
                 .catch(error => this.$refs.error.setError(error));
+        },
+        move($event) {
+            console.log($event);
         }
-    },
+    }
 };
 
 Vue.createApp(App).mount('#app');
