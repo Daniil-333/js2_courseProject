@@ -19,8 +19,8 @@
                 <img src="img/logo.png" alt="Логотип" class="logo__img">
                 <span class="logo__title">bran<span class="logo__title_span">d</span></span>
             </a>
-            <details class="header__browse">
-                <summary class="header__summary">Browse</summary>
+            <details class="browse">
+                <summary class="browse__summary">Browse</summary>
                 <div class="drop">
                     <div class="drop__col">
                         <h3 class="drop__h3">Women</h3>
@@ -44,7 +44,6 @@
                         </ul>
                     </div>
                 </div>
-                </li>
             </details>
             <search ref="search"></search>
             <cart ref="cart"></cart>
@@ -377,124 +376,52 @@
             </nav>
         </div>
     </section>
-    <main class="main-single-page">
-        <div class="single-page-slider">
-            <a href="" class="single-page-slider-link"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-            <img src="img/s-p-slider.jpg" alt="Фото1" class="single-page-slider-img">
-            <a href="" class="single-page-slider-link"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-        </div>
-        <div class="confirm-order">
-            <div class="container">
-                <div class="confirm-order-info">
-                    <p class="confirm-order-collection">Women Collection</p>
-                    <h2 class="confirm-order-h2">Moschino Cheap And Chic</h2>
-                    <p class="confirm-order-description">Compellingly actualize fully researched processes before proactive
-                        outsourcing. Progressively
-                        syndicate collaborative architectures before cutting-edge services. Completely visualize parallel
-                        core
-                        competencies rather than exceptional portals.</p>
-                    <div class="property-items"><p class="property-item">MATERIAL: <span class="value-item">COTTON</span>
-                    </p>
-                        <p class="property-item">DESIGNER: <span class="value-item">BINBURHAN</span></p></div>
-                    <p class="confirm-order-price">$561</p>
-                </div>
-                <form action="#" class="confirm-order-edit">
-                    <div class="confirm-order-color">
-                        <p class="confirm-order-title">Choose color</p>
-                        <select class="confirm-order-input">
-                            <option value="red" class="confirm-order-option confirm-order-color">Red</option>
-                        </select>
-                    </div>
-                    <div class="confirm-order-size">
-                        <p class="confirm-order-title">Choose Size</p>
-                        <select class="confirm-order-input">
-                            <option value="xxl" class="confirm-order-option">XXL</option>
-                        </select>
-                    </div>
-                    <div class="confirm-order-quantity">
-                        <p class="confirm-order-title">Quantity</p>
-                        <input type="number" value="2" class="confirm-order-input no-arrow">
-                    </div>
-                    <button class="confirm-order-buy">Add to Cart</button>
-                </form>
-            </div>
+    <main class="single-page">
+       <div class="slider-product">
+           <a href="#" class="slider-product__link"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+           <img src="img/s-p-slider.jpg" alt="Фото1">
+           <a href="#" class="slider-product__link"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+       </div>
+       <div class="product-single">
+           <div class="container">
+               <div class="product-single__info">
+                   <p class="product-single__collection">Women Collection</p>
+                   <h2 class="product-single__heading">Moschino Cheap And Chic</h2>
+                   <p class="product-single__description">Compellingly actualize fully researched processes before proactive
+                       outsourcing. Progressively
+                       syndicate collaborative architectures before cutting-edge services. Completely visualize parallel
+                       core
+                       competencies rather than exceptional portals.</p>
+                   <div class="product-single__props">
+                       <p class="product-single__prop">MATERIAL: <span class="product-single__prop-value">COTTON</span></p>
+                       <p class="product-single__prop">DESIGNER: <span class="product-single__prop-value">BINBURHAN</span></p>
+                   </div>
+                   <p class="product-single__price">$561</p>
+               </div>
+               <form action="#" class="product-params">
+                   <div>
+                       <p class="product-params__title">Choose color</p>
+                       <select class="product-params__input">
+                           <option value="red" class="input-color">Red</option>
+                       </select>
+                   </div>
+                   <div>
+                       <p class="product-params__title">Choose Size</p>
+                       <select class="product-params__input">
+                           <option value="xxl">XXL</option>
+                       </select>
+                   </div>
+                   <div>
+                       <p class="product-params__title">Quantity</p>
+                       <input type="number" value="2" class="product-params__input no-arrow">
+                   </div>
+                   <button class="product-single__add">Add to Cart</button>
+               </form>
+           </div>
         </div>
         <div class="additions">
-            <h4 class="additions__h4">you may like also</h4>
-            <div class="product-box container">
-                <div class="product">
-                    <a href="#" class="product__link">
-                        <img src="img/add_items1.jpg" alt="T-Short" class="product__img"></a>
-                    <p class="product__name">Blaze Leggings</p>
-                    <p class="product__price">$52.00
-                        <i class="fa fa-star product__stars" aria-hidden="true"></i>
-                        <i
-                                class="fa fa-star product__stars" aria-hidden="true"></i>
-                        <i
-                                class="fa fa-star product__stars" aria-hidden="true"></i>
-                        <i
-                                class="fa fa-star product__stars" aria-hidden="true"></i>
-                        <i
-                                class="fa fa-star product__stars" aria-hidden="true"></i></p>
-                    <a href="#" class="product__add"><img src="img/basket_small.png" alt="Добавить в корзину"
-                                                        class="product__basket">Add to
-                        Cart</a>
-                </div>
-                <div class="product">
-                    <a href="#" class="product__link">
-                        <img src="img/add_items2.jpg" alt="Alexa Sweater" class="product__img"></a>
-                    <p class="product__name">Alexa Sweater</p>
-                    <p class="product__price">$52.00
-                        <i class="fa fa-star product__stars" aria-hidden="true"></i>
-                        <i
-                                class="fa fa-star product__stars" aria-hidden="true"></i>
-                        <i
-                                class="fa fa-star product__stars" aria-hidden="true"></i>
-                        <i
-                                class="fa fa-star product__stars" aria-hidden="true"></i>
-                        <i
-                                class="fa fa-star product__stars" aria-hidden="true"></i></p>
-                    <a href="#" class="product__add"><img src="img/basket_small.png" alt="Добавить в корзину"
-                                                        class="product__basket">Add to
-                        Cart</a>
-                </div>
-                <div class="product">
-                    <a href="#" class="product__link">
-                        <img src="img/add_items3.jpg" alt="Agnes Top" class="product__img"></a>
-                    <p class="product__name">Agnes Top</p>
-                    <p class="product__price">$52.00
-                        <i class="fa fa-star product__stars" aria-hidden="true"></i>
-                        <i
-                                class="fa fa-star product__stars" aria-hidden="true"></i>
-                        <i
-                                class="fa fa-star product__stars" aria-hidden="true"></i>
-                        <i
-                                class="fa fa-star product__stars" aria-hidden="true"></i>
-                        <i
-                                class="fa fa-star product__stars" aria-hidden="true"></i></p>
-                    <a href="#" class="product__add"><img src="img/basket_small.png" alt="Добавить в корзину"
-                                                        class="product__basket">Add to
-                        Cart</a>
-                </div>
-                <div class="product">
-                    <a href="#" class="product__link">
-                        <img src="img/add_items4.jpg" alt="Sylva Sweater" class="product__img"></a>
-                    <p class="product__name">Sylva Sweater</p>
-                    <p class="product__price">$52.00
-                        <i class="fa fa-star product__stars" aria-hidden="true"></i>
-                        <i
-                                class="fa fa-star product__stars" aria-hidden="true"></i>
-                        <i
-                                class="fa fa-star product__stars" aria-hidden="true"></i>
-                        <i
-                                class="fa fa-star product__stars" aria-hidden="true"></i>
-                        <i
-                                class="fa fa-star product__stars" aria-hidden="true"></i></p>
-                    <a href="#" class="product__add"><img src="img/basket_small.png" alt="Добавить в корзину"
-                                                        class="product__basket">Add to
-                        Cart</a>
-                </div>
-            </div>
+            <h4 class="additions__heading">you may like also</h4>
+            <products page="single"></products>
         </div>
     </main>
 </div>
@@ -514,8 +441,8 @@
             </article>
         </div>
         <div class="subscribe-form">
-            <h6 class="subscribe-container-h6">Subscribe</h6>
-            <p class="subscribe-container__subtitle">FOR OUR NEWLETTER AND PROMOTION</p>
+            <h6 class="subscribe-form__heading">Subscribe</h6>
+            <p class="subscribe-form__subtitle">FOR OUR NEWLETTER AND PROMOTION</p>
             <form action="#" class="send-form">
                 <input type="email" placeholder="Enter Your Email" class="send-form__input"><button class="send-form__button">Subscribe</button>
             </form>
@@ -524,7 +451,7 @@
 </section>
 <footer class="footer">
     <div class="container">
-        <div class="footer__content">
+        <div class="footer-content">
             <div class="footer__logo">
                 <a href="index.html" class="logo">
                     <img src="img/logo.png" alt="Логотип" class="logo__img">
@@ -539,30 +466,30 @@
                     Dynamically
                     optimize.</p>
             </div>
-            <div class="footer-menu">
-                <nav class="footer-menu__col">
-                    <p class="footer-menu__title">Company</p>
-                    <a href="#" class="footer-menu__link">Home</a>
-                    <a href="#" class="footer-menu__link">Shop</a>
-                    <a href="#" class="footer-menu__link">About</a>
-                    <a href="#" class="footer-menu__link">How It Work</a>
-                    <a href="#" class="footer-menu__link">Contact</a>
+            <div class="footer-nav">
+                <nav class="footer-nav__col">
+                    <p class="footer-nav__title">Company</p>
+                    <a href="#" class="footer-nav__link">Home</a>
+                    <a href="#" class="footer-nav__link">Shop</a>
+                    <a href="#" class="footer-nav__link">About</a>
+                    <a href="#" class="footer-nav__link">How It Work</a>
+                    <a href="#" class="footer-nav__link">Contact</a>
                 </nav>
-                <nav class="footer-menu__col">
-                    <p class="footer-menu__title">Information</p>
-                    <a href="#" class="footer-menu__link">Tearms & Condition</a>
-                    <a href="#" class="footer-menu__link">Privacy Policy</a>
-                    <a href="#" class="footer-menu__link">How to Buy</a>
-                    <a href="#" class="footer-menu__link">How to Sell</a>
-                    <a href="#" class="footer-menu__link">Promotion</a>
+                <nav class="footer-nav__col">
+                    <p class="footer-nav__title">Information</p>
+                    <a href="#" class="footer-nav__link">Tearms & Condition</a>
+                    <a href="#" class="footer-nav__link">Privacy Policy</a>
+                    <a href="#" class="footer-nav__link">How to Buy</a>
+                    <a href="#" class="footer-nav__link">How to Sell</a>
+                    <a href="#" class="footer-nav__link">Promotion</a>
                 </nav>
-                <nav class="footer-menu__col">
-                    <p class="footer-menu__title">Shop Category</p>
-                    <a href="#" class="footer-menu__link">Men</a>
-                    <a href="#" class="footer-menu__link">Women</a>
-                    <a href="#" class="footer-menu__link">Child</a>
-                    <a href="#" class="footer-menu__link">Apparel</a>
-                    <a href="#" class="footer-menu__link">Brows All</a>
+                <nav class="footer-nav__col">
+                    <p class="footer-nav__title">Shop Category</p>
+                    <a href="#" class="footer-nav__link">Men</a>
+                    <a href="#" class="footer-nav__link">Women</a>
+                    <a href="#" class="footer-nav__link">Child</a>
+                    <a href="#" class="footer-nav__link">Apparel</a>
+                    <a href="#" class="footer-nav__link">Brows All</a>
                 </nav>
             </div>
         </div>

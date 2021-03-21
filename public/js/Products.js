@@ -1,14 +1,24 @@
 import {ProductItem} from "./ProductItem.js";
 
 export const Products = {
-    inject: ['API', 'getJson'],
+    inject: ['getJson'],
     components: {
-        ProductItem
+        ProductItem,
+    },
+    props: {
+        page: {
+            type: String,
+            default: "main"
+        }
     },
     data() {
         return {
-            // catalogUrl: '/catalogData.json',
             products: [],
+            pages: {
+                main: `/api/products/8`,
+                prod: `/api/products/9`,
+                single: `/api/products/4`
+            }
         }
     },
     computed: {
@@ -17,15 +27,13 @@ export const Products = {
         }
     },
     mounted() {
-        this.getJson(`/api/products`)
+        this.getJson(this.pages[this.page])
             .then(data => {
-                for (let el of data) {
-                    this.products.push(el);
-                }
+                this.products = data;
             });
     },
     template: `
-        <div class="product-box">
+        <div class="product-box container">
                 <ProductItem
                 v-for="el of filtered"
                 :key="el.id_product"

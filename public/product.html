@@ -20,8 +20,8 @@
                 <img src="img/logo.png" alt="Логотип" class="logo__img">
                 <span class="logo__title">bran<span class="logo__title_span">d</span></span>
             </a>
-            <details class="header__browse">
-                <summary class="header__summary">Browse</summary>
+            <details class="browse">
+                <summary class="browse__summary">Browse</summary>
                 <div class="drop">
                     <div class="drop__col">
                         <h3 class="drop__h3">Women</h3>
@@ -45,7 +45,6 @@
                         </ul>
                     </div>
                 </div>
-                </li>
             </details>
             <search ref="search"></search>
             <cart ref="cart"></cart>
@@ -370,7 +369,7 @@
     <section class="new-arrival">
         <div class="container">
             <h2 class="new-arrival__title">New Arrivals</h2>
-            <nav class="new-arrival__breadcrumbs">
+            <nav>
                 <a href="#" class="new-arrival__link">Home</a>
                 <a href="#" class="new-arrival__link">Men</a>
                 <a href="#" class="new-arrival__link">New Arrivals</a>
@@ -379,287 +378,120 @@
     </section>
     <main class="main-product">
         <div class="container">
-            <div class="filter-aside">
-                <div class="filter-aside-item">
-                    <input type="checkbox" id="filter-aside-item-1" class="filter-aside-input" checked>
-                    <label for="filter-aside-item-1" class="filter-aside-label">Category</label>
-                    <nav class="filter-aside-content">
-                        <a href="#" class="filter-aside-link">Accessories</a>
-                        <a href="#" class="filter-aside-link">Bags</a>
-                        <a href="#" class="filter-aside-link">Denim</a>
-                        <a href="#" class="filter-aside-link">Hoodies & Sweatshirts</a>
-                        <a href="#" class="filter-aside-link">Jackets & Coats</a>
-                        <a href="#" class="filter-aside-link">Pants</a>
-                        <a href="#" class="filter-aside-link">Polos</a>
-                        <a href="#" class="filter-aside-link">Shirts</a>
-                        <a href="#" class="filter-aside-link">Shoes</a>
-                        <a href="#" class="filter-aside-link">Shorts</a>
-                        <a href="#" class="filter-aside-link">Sweaters & Knits</a>
-                        <a href="#" class="filter-aside-link">T-Shirts</a>
-                        <a href="#" class="filter-aside-link">Tanks</a>
-                    </nav>
-                </div>
-                <div class="filter-aside-item">
-                    <input type="checkbox" id="filter-aside-item-2" class="filter-aside-input">
-                    <label for="filter-aside-item-2" class="filter-aside-label">Brand</label>
-                    <nav class="filter-aside-content">
-                        <a href="#" class="filter-aside-link"></a>
-                    </nav>
-                </div>
-                <div class="filter-aside-item">
-                    <input type="checkbox" id="filter-aside-item-3" class="filter-aside-input">
-                    <label for="filter-aside-item-3" class="filter-aside-label">Designer</label>
-                    <nav class="filter-aside-content">
-                        <a href="#" class="filter-aside-link"></a>
-                    </nav>
-                </div>
+            <div class="aside-box">
+                <div>
+                    <input type="checkbox" id="aside-box__category" class="aside-box__input">
+                    <label for="aside-box__category" class="aside-box__label">Category</label>
+                    <nav class="aside-box__nav">
+                        <a href="#" class="aside-box__link">Accessories</a>
+                        <a href="#" class="aside-box__link">Bags</a>
+                        <a href="#" class="aside-box__link">Denim</a>
+                        <a href="#" class="aside-box__link">Hoodies & Sweatshirts</a>
+                        <a href="#" class="aside-box__link">Jackets & Coats</a>
+                        <a href="#" class="aside-box__link">Pants</a>
+                        <a href="#" class="aside-box__link">Polos</a>
+                        <a href="#" class="aside-box__link">Shirts</a>
+                        <a href="#" class="aside-box__link">Shoes</a>
+                        <a href="#" class="aside-box__link">Shorts</a>
+                        <a href="#" class="aside-box__link">Sweaters & Knits</a>
+                        <a href="#" class="aside-box__link">T-Shirts</a>
+                        <a href="#" class="aside-box__link">Tanks</a>
+                    </nav></div>
+                <div>
+                    <input type="checkbox" id="aside-box__brand" class="aside-box__input">
+                    <label for="aside-box__brand" class="aside-box__label">Brand</label>
+                    <nav class="aside-box__nav">
+                        <a href="#" class="aside-box__link"></a>
+                    </nav></div>
+                <div>
+                    <input type="checkbox" id="aside-box__designer" class="aside-box__input">
+                    <label for="aside-box__designer" class="aside-box__label">Designer</label>
+                    <nav class="aside-box__nav">
+                        <a href="#" class="aside-box__link"></a>
+                    </nav></div>
             </div>
             <div class="products">
-                <div class="filters-center">
-                    <form action="#" class="filters-center__form filters-center__form-trending">
-                        <h4 class="filters-center-h4">Trending now</h4>
-                        <input type="radio" name="trend" id="trend-1" class="filters-center__form-input">
-                        <label for="trend-1" class="trending-label">Bohemian</label><span class="board">|</span>
-                        <input type="radio" name="trend" id="trend-2" class="filters-center__form-input">
-                        <label for="trend-2" class="trending-label">Floral</label><span class="board">|</span>
-                        <input type="radio" name="trend" id="trend-3" class="filters-center__form-input">
-                        <label for="trend-3" class="trending-label">Lace</label>
-                        <input type="radio" name="trend" id="trend-4" class="filters-center__form-input">
-                        <label for="trend-4" class="trending-label">Floral</label><span class="board">|</span>
-                        <input type="radio" name="trend" id="trend-5" class="filters-center__form-input">
-                        <label for="trend-5" class="trending-label">Lace</label><span class="board">|</span>
-                        <input type="radio" name="trend" id="trend-6" class="filters-center__form-input">
-                        <label for="trend-6" class="trending-label">Bohemian</label>
+                <div class="filters">
+                    <form action="#" class="trending">
+                        <h4 class="filters__heading">Trending now</h4>
+                        <input type="radio" name="trend" id="filter-bohemian" class="trending__input">
+                        <label for="filter-bohemian" class="trending-item">Bohemian</label><span class="trending__board">|</span>
+                        <input type="radio" name="trend" id="trend-2" class="trending__input">
+                        <label for="trend-2" class="trending-item">Floral</label><span class="trending__board">|</span>
+                        <input type="radio" name="trend" id="trend-3" class="trending__input">
+                        <label for="trend-3" class="trending-item">Lace</label> <br>
+                        <input type="radio" name="trend" id="trend-4" class="trending__input">
+                        <label for="trend-4" class="trending-item">Floral</label><span class="trending__board">|</span>
+                        <input type="radio" name="trend" id="trend-5" class="trending__input">
+                        <label for="trend-5" class="trending-item">Lace</label><span class="trending__board">|</span>
+                        <input type="radio" name="trend" id="trend-6" class="trending__input">
+                        <label for="trend-6" class="trending-item">Bohemian</label>
                     </form>
-                    <form action="#" class="filters-center__form filters-center__form-size">
-                        <h4 class="filters-center-h4">Size</h4>
+                    <form action="#" class="size">
+                        <h4 class="filters__heading">Size</h4>
                         <div class="size-items-wrapper">
                             <div class="size-vertical-wrapper">
-                                <label class="size-item"><input type="checkbox" class="filters-center__form-input"><span class="checkmark"></span>XXS</label>
-                                <label class="size-item"><input type="checkbox" class="filters-center__form-input"><span class="checkmark"></span>L</label>
+                                <label class="size__item"><input type="checkbox" class="size__input"><span class="checkmark"></span>XXS</label>
+                                <label class="size__item"><input type="checkbox" class="size__input"><span class="checkmark"></span>L</label>
                             </div>
                             <div class="size-vertical-wrapper">
-                                <label class="size-item"><input type="checkbox" class="filters-center__form-input"><span class="checkmark"></span>XS</label>
-                                <label class="size-item"><input type="checkbox" class="filters-center__form-input"><span class="checkmark"></span>XL</label>
+                                <label class="size__item"><input type="checkbox" class="size__input"><span class="checkmark"></span>XS</label>
+                                <label class="size__item"><input type="checkbox" class="size__input"><span class="checkmark"></span>XL</label>
                             </div>
                             <div class="size-vertical-wrapper">
-                                <label class="size-item"><input type="checkbox" class="filters-center__form-input"><span class="checkmark"></span>S</label>
-                                <label class="size-item"><input type="checkbox" class="filters-center__form-input"><span class="checkmark"></span>XXL</label>
+                                <label class="size__item"><input type="checkbox" class="size__input"><span class="checkmark"></span>S</label>
+                                <label class="size__item"><input type="checkbox" class="size__input"><span class="checkmark"></span>XXL</label>
                             </div>
                             <div class="size-vertical-wrapper">
-                                <label class="size-item"><input type="checkbox" class="filters-center__form-input"><span class="checkmark"></span>M</label>
+                                <label class="size__item"><input type="checkbox" class="size__input"><span class="checkmark"></span>M</label>
                             </div>
                         </div>
                     </form>
-                    <form action="#" class="filters-center__form filters-center__form-price">
-                        <h4 class="filters-center-h4">Price</h4>
+                    <form action="#" class="price">
+                        <h4 class="filters__heading">Price</h4>
                         <div class="price-range">
-                            <div class="price-range__value"></div>
+                            <div class="price__scale"></div>
                         </div>
-                        <div class="all-price">
-                            <span class="low-price">52$</span><span class="high-price">400$</span></div>
+                        <div class="price__minmax">
+                            <span class="price__value">52$</span><span class="price__value">400$</span></div>
                     </form>
                 </div>
                 <div class="sorting">
                     <div class="sort">
-                        <p class="sort-name">Sort By</p>
-                        <select class="sort-select"> <!--name="" id=""-->
-                            <option value="Name">Name</option>
-                        </select>
+                        <p class="sort__name">Sort By</p>
+                        <details class="sort__btn">
+                            <summary class="sort__summary">Name</summary>
+                        </details>
                     </div>
                     <div class="sort">
-                        <p class="sort-name">Show</p>
-                        <select class="sort-select" name="" id="">
-                            <option value="9">09</option>
-                        </select>
+                        <p class="sort__name">Show</p>
+                        <details class="sort__btn">
+                            <summary class="sort__summary">09</summary>
+                        </details>
                     </div>
                 </div>
-                <div class="product-box">
-                    <div class="product">
-                        <a href="#" class="product__link">
-                            <img src="img/product1.jpg" alt="T-Short" class="product__img"></a>
-                        <p class="product__name">Mango People T-shirt</p>
-                        <p class="product__price">$52.00
-                            <i class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i></p>
-                        <a href="#" class="product__add"><img src="img/basket_small.png" alt="Добавить в корзину"
-                                                              class="product__basket">Add to
-                            Cart</a>
+                <products page ="prod"></products>
+                <div class="products__pagination">
+                    <div class="pagination">
+                        <a href="#" class="pagination__link"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                        <a href="#" class="pagination__link">1</a>
+                        <a href="#" class="pagination__link">2</a>
+                        <a href="#" class="pagination__link">3</a>
+                        <a href="#" class="pagination__link">4</a>
+                        <a href="#" class="pagination__link">5</a>
+                        <a href="#" class="pagination__link">6</a>
+                        <a href="#" class="pagination__link">20</a>
+                        <a href="#" class="pagination__link"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
                     </div>
-                    <div class="product">
-                        <a href="#" class="product__link">
-                            <img src="img/product2.jpg" alt="T-Short" class="product__img"></a>
-                        <p class="product__name">Mango People T-shirt</p>
-                        <p class="product__price">$52.00
-                            <i class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i></p>
-                        <a href="#" class="product__add"><img src="img/basket_small.png" alt="Добавить в корзину"
-                                                              class="product__basket">Add to
-                            Cart</a>
-                    </div>
-                    <div class="product">
-                        <a href="#" class="product__link">
-                            <img src="img/fetured-item3.jpg" alt="T-Short" class="product__img"></a>
-                        <p class="product__name">Mango People T-shirt</p>
-                        <p class="product__price">$52.00
-                            <i class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i></p>
-                        <a href="#" class="product__add"><img src="img/basket_small.png" alt="Добавить в корзину"
-                                                              class="product__basket">Add to
-                            Cart</a>
-                    </div>
-                    <div class="product">
-                        <a href="#" class="product__link">
-                            <img src="img/product4.jpg" alt="T-Short" class="product__img"></a>
-                        <p class="product__name">Mango People T-shirt</p>
-                        <p class="product__price">$52.00
-                            <i class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i></p>
-                        <a href="#" class="product__add"><img src="img/basket_small.png" alt="Добавить в корзину"
-                                                              class="product__basket">Add to
-                            Cart</a>
-                    </div>
-                    <div class="product">
-                        <a href="#" class="product__link">
-                            <img src="img/fetured-item8.jpg" alt="T-Short" class="product__img"></a>
-                        <p class="product__name">Mango People T-shirt</p>
-                        <p class="product__price">$52.00
-                            <i class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i></p>
-                        <a href="#" class="product__add"><img src="img/basket_small.png" alt="Добавить в корзину"
-                                                              class="product__basket">Add to
-                            Cart</a>
-                    </div>
-                    <div class="product">
-                        <a href="#" class="product__link">
-                            <img src="img/product5.jpg" alt="T-Short" class="product__img"></a>
-                        <p class="product__name">Mango People T-shirt</p>
-                        <p class="product__price">$52.00
-                            <i class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i></p>
-                        <a href="#" class="product__add"><img src="img/basket_small.png" alt="Добавить в корзину"
-                                                              class="product__basket">Add to
-                            Cart</a>
-                    </div>
-                    <div class="product">
-                        <a href="#" class="product__link">
-                            <img src="img/fetured-item6.jpg" alt="T-Short" class="product__img"></a>
-                        <p class="product__name">Mango People T-shirt</p>
-                        <p class="product__price">$52.00
-                            <i class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i></p>
-                        <a href="#" class="product__add"><img src="img/basket_small.png" alt="Добавить в корзину"
-                                                              class="product__basket">Add to
-                            Cart</a>
-                    </div>
-                    <div class="product">
-                        <a href="#" class="product__link">
-                            <img src="img/product5.jpg" alt="T-Short" class="product__img"></a>
-                        <p class="product__name">Mango People T-shirt</p>
-                        <p class="product__price">$52.00
-                            <i class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i></p>
-                        <a href="#" class="product__add"><img src="img/basket_small.png" alt="Добавить в корзину"
-                                                              class="product__basket">Add to
-                            Cart</a>
-                    </div>
-                    <div class="product">
-                        <a href="#" class="product__link">
-                            <img src="img/product6.jpg" alt="T-Short" class="product__img"></a>
-                        <p class="product__name">Mango People T-shirt</p>
-                        <p class="product__price">$52.00
-                            <i class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i>
-                            <i
-                                    class="fa fa-star product__stars" aria-hidden="true"></i></p>
-                        <a href="#" class="product__add"><img src="img/basket_small.png" alt="Добавить в корзину"
-                                                              class="product__basket">Add to
-                            Cart</a>
-                    </div>
-                </div>
-                <products ref="products"></products>
-                <div class="fetured-items-nav">
-                    <div class="fetured-items-links">
-                        <a href="#" class="fetured-items-nav-link"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-                        <a href="#" class="fetured-items-nav-link">1</a>
-                        <a href="#" class="fetured-items-nav-link">2</a>
-                        <a href="#" class="fetured-items-nav-link">3</a>
-                        <a href="#" class="fetured-items-nav-link">4</a>
-                        <a href="#" class="fetured-items-nav-link">5</a>
-                        <a href="#" class="fetured-items-nav-link">6</a>
-                        <a href="#" class="fetured-items-nav-link">20</a>
-                        <a href="#" class="fetured-items-nav-link"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                    </div>
-                    <button class="view-all">View All</button>
+                    <button class="view-all-products">View All</button>
                 </div>
             </div>
         </div>
     </main>
 </div>
-<section class="sale-side sale-side-general">
+<section class="sale-side-general">
     <div class="container">
-        <div class="sale-side__item"><img src="img/off_wom_car.png" alt="Доставка" class="sale-side__img">
+        <div class="sale-side__item"><img src="img/sale_car.png" alt="Доставка" class="sale-side__img">
             <div class="sale-side__info"><p class="sale-side__title">Free Delivery</p>Worldwide delivery on all.
                 Authorit tively
                 morph
@@ -667,7 +499,7 @@
                 innov tion with extensive models.
             </div>
         </div>
-        <div class="sale-side__item"><img src="img/off_wom_sale.png" alt="Доставка" class="sale-side__img">
+        <div class="sale-side__item"><img src="img/sale_disc.png" alt="Скидка" class="sale-side__img">
             <div class="sale-side__info"><p class="sale-side__title">Sales & discounts</p>Worldwide delivery on
                 all. Authorit
                 tively
@@ -676,7 +508,7 @@
                 innov tion with extensive models.
             </div>
         </div>
-        <div class="sale-side__item"><img src="img/off_wom_crown.png" alt="Доставка" class="sale-side__img">
+        <div class="sale-side__item"><img src="img/sale_crown.png" alt="Качество" class="sale-side__img">
             <div class="sale-side__info"><p class="sale-side__title">Quality assurance</p>Worldwide delivery on
                 all. Authorit
                 tively
@@ -703,8 +535,8 @@
             </article>
         </div>
         <div class="subscribe-form">
-            <h6 class="subscribe-container-h6">Subscribe</h6>
-            <p class="subscribe-container__subtitle">FOR OUR NEWLETTER AND PROMOTION</p>
+            <h6 class="subscribe-form__heading">Subscribe</h6>
+            <p class="subscribe-form__subtitle">FOR OUR NEWLETTER AND PROMOTION</p>
             <form action="#" class="send-form">
                 <input type="email" placeholder="Enter Your Email" class="send-form__input"><button class="send-form__button">Subscribe</button>
             </form>
@@ -713,7 +545,7 @@
 </section>
 <footer class="footer">
     <div class="container">
-        <div class="footer__content">
+        <div class="footer-content">
             <div class="footer__logo">
                 <a href="index.html" class="logo">
                     <img src="img/logo.png" alt="Логотип" class="logo__img">
@@ -728,30 +560,30 @@
                     Dynamically
                     optimize.</p>
             </div>
-            <div class="footer-menu">
-                <nav class="footer-menu__col">
-                    <p class="footer-menu__title">Company</p>
-                    <a href="#" class="footer-menu__link">Home</a>
-                    <a href="#" class="footer-menu__link">Shop</a>
-                    <a href="#" class="footer-menu__link">About</a>
-                    <a href="#" class="footer-menu__link">How It Work</a>
-                    <a href="#" class="footer-menu__link">Contact</a>
+            <div class="footer-nav">
+                <nav class="footer-nav__col">
+                    <p class="footer-nav__title">Company</p>
+                    <a href="#" class="footer-nav__link">Home</a>
+                    <a href="#" class="footer-nav__link">Shop</a>
+                    <a href="#" class="footer-nav__link">About</a>
+                    <a href="#" class="footer-nav__link">How It Work</a>
+                    <a href="#" class="footer-nav__link">Contact</a>
                 </nav>
-                <nav class="footer-menu__col">
-                    <p class="footer-menu__title">Information</p>
-                    <a href="#" class="footer-menu__link">Tearms & Condition</a>
-                    <a href="#" class="footer-menu__link">Privacy Policy</a>
-                    <a href="#" class="footer-menu__link">How to Buy</a>
-                    <a href="#" class="footer-menu__link">How to Sell</a>
-                    <a href="#" class="footer-menu__link">Promotion</a>
+                <nav class="footer-nav__col">
+                    <p class="footer-nav__title">Information</p>
+                    <a href="#" class="footer-nav__link">Tearms & Condition</a>
+                    <a href="#" class="footer-nav__link">Privacy Policy</a>
+                    <a href="#" class="footer-nav__link">How to Buy</a>
+                    <a href="#" class="footer-nav__link">How to Sell</a>
+                    <a href="#" class="footer-nav__link">Promotion</a>
                 </nav>
-                <nav class="footer-menu__col">
-                    <p class="footer-menu__title">Shop Category</p>
-                    <a href="#" class="footer-menu__link">Men</a>
-                    <a href="#" class="footer-menu__link">Women</a>
-                    <a href="#" class="footer-menu__link">Child</a>
-                    <a href="#" class="footer-menu__link">Apparel</a>
-                    <a href="#" class="footer-menu__link">Brows All</a>
+                <nav class="footer-nav__col">
+                    <p class="footer-nav__title">Shop Category</p>
+                    <a href="#" class="footer-nav__link">Men</a>
+                    <a href="#" class="footer-nav__link">Women</a>
+                    <a href="#" class="footer-nav__link">Child</a>
+                    <a href="#" class="footer-nav__link">Apparel</a>
+                    <a href="#" class="footer-nav__link">Brows All</a>
                 </nav>
             </div>
         </div>

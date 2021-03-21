@@ -12,13 +12,11 @@ const App = {
     },
     data() {
         return {
-            API: `https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses`,
             userSearch: ''
         }
     },
     provide() {
         return {
-            API: this.API,
             getJson: this.getJson,
             putJson: this.putJson,
             postJson: this.postJson,
@@ -62,8 +60,11 @@ const App = {
             })
                 .then(result => result.json())
                 .catch(error => this.$refs.error.setError(error));
+        },
+        move($event) {
+            console.log($event);
         }
-    },
+    }
 };
 
 Vue.createApp(App).mount('#app');
