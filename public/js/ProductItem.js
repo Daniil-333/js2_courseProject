@@ -14,7 +14,7 @@ export const ProductItem = {
                             <i class="fa fa-star" aria-hidden="true"></i>
                             </span>
                         </p>
-                        <button class="product__add" @click="$root.$refs.cart.liveRaiting"><img src="img/basket_small.png" alt="add-to-cart" class="product__basket">Add to Cart</button>
+                        <button class="product__add" @click="$root.$refs.cart.addProduct(product)"><img src="img/basket_small.png" alt="add-to-cart" class="product__basket">Add to Cart</button>
                 </div>
     
     `

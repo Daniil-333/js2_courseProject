@@ -33,6 +33,18 @@
             "material": "Cotton",
             "designer": "Binburhan",
             "subPrice": 52
+        },
+        {
+            "quantity": 1,
+            "id_product": 4,
+            "product_name": "MANGO PEOPLE T-SHIRT",
+            "price": 52,
+            "img": "img/fetured-item4.jpg",
+            "color": "Red",
+            "size": "XII",
+            "material": "Cotton",
+            "designer": "Binburhan",
+            "subPrice": 52
         }
     ]
 }
